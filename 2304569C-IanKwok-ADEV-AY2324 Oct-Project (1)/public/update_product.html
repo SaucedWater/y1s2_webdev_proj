@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Product Update/Delete Page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update or Delete Product</title>
+    <script src="js/product.js"></script>
+    <link rel="stylesheet" href="css/update.css">
+</head>
+<body onload="loadProductDetail()" >
+    <h1>
+        Update/Delete Product
+    </h1>
+
+    <div class="main">
+        <form method="post">
+            <input type="text" id="id" name="id" hidden><br>
+
+            <label for="name">Product Name (Max 100 Characters):<span class="asterisk">*</span> </label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="description">Description (Max 200 Characters):<span class="asterisk">*</span> </label><br>
+            <input type="text" id="description" name="description" required><br>
+
+            <label for="price">Price:<span class="asterisk">*</span> </label><br>
+            <input type="number" id="price" name="price" required><br>
+
+            <label for="category_id">Category:<span class="asterisk">*</span> </label><br>
+
+            <select id="category_id" name="category_id" required>
+                <option value="" selected disabled>Select a category</option>
+                <option value="1">Category 1</option>
+                <option value="2">Category 2</option>
+                
+            </select><br>
+
+            <label for="picture">Product Image:<span class="asterisk">*</span> </label><br>
+            <input type="text" id="picture" name="picture" required><br>
+
+            <input type="button" onclick="updateProductData()" value="Update" id="updateButton">
+            <input type="button" onclick="deleteProductData(this)" prodId="" id="deleteButton" value="Delete">
+            <input type="button" onclick="window.location.href='product.html'" class="return" value="Return To Main Page">
+        </form>
+    </div>
+
+    
+</body>
+</html>

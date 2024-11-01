@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- Product Display Page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+    <script src="js/product.js"></script>
+
+    </head>
+    <body onload="loadProductData()">
+
+        <div class="mHeader">  <!-- Dark Slate Gray Header Beginning -->
+            <header class="header1">
+                <h1> The Sporty Essentials</h1>
+            </header>
+            
+
+            <nav class="links">
+                <input type="button" onclick="window.location.href='post_product.html'"  class="innerLinks" value="Add A Product">
+            </nav>
+        
+    </div> <!-- Dark Slate Gray Header Ending -->
+
+    <div class="search-wrapper">
+        <form action="/search" class="searchBar">
+
+            <i class="fas fa-search" class="searchIcon"></i>
+            <input type="text" id="search" name="search" placeholder="Search For Items Here" oninput="searchProducts()">
+            
+            
+  
+            
+        </form>
+    </div>
+
+        
+    <div id = "dynamicProductDataList">
+        <table class="table">   
+            <tr class="tprod"><!-- 1 row-->
+                    <td class="products">
+                        <div class="product-content">
+                            <img src = "image/bottle.png" alt="Product 1 Image" width= "150" height="100" id="picz">
+                            <p class="price"><b>Price: $$$</b></p>
+                            <h4 class="pname">Product Name 1</h4>
+                            <h5 class="cat">Category: </h5>
+                            <p class="desc">Description 1</p>
+                        </div>
+                        
+                    </td>
+
+                    <td class="products">
+                        <div class="product-content">
+                            <img src = "image/basketball.png" alt="Product 2 Image" width="150" height="100" id="picz">
+                            <p class="price"><b>Price: $$$</b></p>
+                            <h4 class="pname">Product Name 1</h4>
+                            <h5 class="cat">Category: </h5>
+                            <p class="desc">Description 1</p>
+                        </div>
+                    </td>
+                    <td class="products">
+                        <div class="product-content">
+                            <img src = "image/pen.png" alt="Product 3 Image" width="150" height="100" id="picz">
+                            <p class="price"><b>Price: $$$</b></p>
+                            <h4 class="pname">Product Name 1</h4>
+                            <h5 class="cat">Category: </h5>
+                            <p class="desc">Description 1</p>
+                        </div>
+                    </td>
+
+
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+<footer> <!-- Footer Starts Here-->
+
+    <div class="foot1">
+        <h2>About Us</h2>
+        <hr class="line">
+        <p>We are a small company trying to provide sporting needs.</p>
+        <p>We strive to provide high-quality products.</p>
+    </div>
+    <div class="foot2">
+        <h2>Contact Us</h2>
+        <hr class="line">
+        <div class="foot2List">
+            <a href="https://www.instagram.com" target="_blank">Instagram</a><br>
+            Email: kwokian39@gmail.com<br>  
+            Phone: +123456789
+        </div>
+    </div>
+
+
+</footer> <!-- Footer Starts Here-->
+</html> 
